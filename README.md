@@ -17,6 +17,17 @@
 
 - 接口源：
 
+[m3u源](./output/user_result.m3u)
+```bash
+https://bluecateatlala.github.io/iptv-api/output/user_result.m3u
+```
+[txt源](./output/user_result.txt)
+```bash
+https://bluecateatlala.github.io/iptv-api/output/user_result.txt
+```
+
+或
+
 ```bash
 https://ghproxy.cc/https://raw.githubusercontent.com/BlueCatEatLala/iptv-api/master/output/user_result.m3u
 ```
@@ -26,17 +37,6 @@ https://ghproxy.cc/https://raw.githubusercontent.com/BlueCatEatLala/iptv-api/mas
 ```
 
 🙏 感谢由[ghproxy.cc](https://ghproxy.cc)提供的代理加速服务
-
-或
-
-```bash
-https://bluecateatlala.github.io/iptv-api/output/user_result.m3u
-```
-
-```bash
-https://bluecateatlala.github.io/iptv-api/output/user_result.txt
-```
-
 
 📍订阅源来自：
 
