@@ -34,27 +34,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set current date as env variable
-        run: echo "NOW::$(date +'%Y-%m-%dT%H:%M:%S')" 
-      - name: Echo current date
-        run: echo $NOW
       - name: Update README with current time
-        run: 
-          # 使用sed命令修改README.md的特定行
-          # 例如，将第3行替换为"New content"
-             sed -i '14s/.*/$NOW/' README.md
-          # 或者如果你想追加内容到文件末尾
-          # echo "New content" >> README.md
-          # 如果你想修改特定内容，可以用更复杂的sed表达式
-          # sed -i '/specific_pattern/c\New content' README.md
+        run: |
+          NOW=$(date +'%Y-%m-%d %H:%M:%S')
+          sed -i '14s/.*/'"$NOW"'/' README.md
       - name: Commit and push changes
-        run: 
+        run: |
              git config --local user.email "github-actions[bot]@users.noreply.github.com"
              git config --local user.name "github-actions[bot]"
-             git diff
              git add README.md
              git commit -m "Github Action Auto Updated"
              git push --force
+             
   # Build job
   build:
     runs-on: ubuntu-latest
