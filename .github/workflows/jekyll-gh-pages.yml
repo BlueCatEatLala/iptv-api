@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Update README with current time
-        run: python ./master/output/update_readme.py
+        run: python update_readme.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
