@@ -1,4 +1,5 @@
 import datetime
+import git
 
 def update_readme():
     tz = datetime.timezone(datetime.timedelta(hours=8))
@@ -12,6 +13,17 @@ def update_readme():
 
     with open(readme_path, "w") as readme_file:
         readme_file.writelines(lines)
+
+    # 使用GitPython初始化仓库
+    repo = git.Repo("./")
+    
+    # 添加修改后的文件到索引
+    repo.git.add("./readme.md')
+    
+    # 提交更改
+    repo.index.commit("Updated readme.md")
+    
+    print("Readme.md has been modified and committed successfully.")
 
 if __name__ == "__main__":
     update_readme()
