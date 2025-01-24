@@ -15,10 +15,10 @@ def update_readme():
         readme_file.writelines(lines)
 
     # 使用GitPython初始化仓库
-    repo = git.Repo("./")
+    repo = git.Repo('./')
     
     # 添加修改后的文件到索引
-    repo.git.add("./readme.md')
+    repo.git.add('./readme.md')
     
     # 提交更改
     repo.index.commit("Updated readme.md")
