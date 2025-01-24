@@ -32,16 +32,14 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
       - name: Update README with current time
         run: |
           NOW=$(date +'%Y-%m-%d %H:%M:%S')
           sed -i '14s/.*/'"$NOW"'/' README.md
       - name: Commit and push changes
         run: |
-             git config --local user.email "github-actions[bot]@users.noreply.github.com"
-             git config --local user.name "github-actions[bot]"
+             git config --local user.email "github-actions@example.com"
+             git config --local user.name "GitHub Actions"
              git add README.md
              git commit -m "Github Action Auto Updated"
              git push --force
