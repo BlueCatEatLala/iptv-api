@@ -35,8 +35,8 @@ jobs:
         run: |
           Prex="## 最新结果 @ "
           NOW=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
-          Update_Time="${str1}${str2}"
-          sed -i '14s/.*/'"$NOW"'/' README.md
+          Update_Time="${Prex}${NOW}"
+          sed -i '15s/.*/'"$Update_Time"'/' README.md
       - name: Commit and push changes
         run: |
              git config --local user.email "github-actions@example.com"
