@@ -12,12 +12,9 @@ on:
       - completed  # Trigger this workflow when the triggering workflow is completed
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Push Pages' 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
