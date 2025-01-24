@@ -2,7 +2,7 @@ import datetime
 
 def update_readme():
     tz = datetime.timezone(datetime.timedelta(hours=8))
-    current_time = datetime.datetime.now(tz=tz)
+    current_time = datetime.datetime.now(tz=tz).strftime("%Y-%m-%d %H:%M:%S")
     readme_path = "./README.md"
 
     with open(readme_path, "r") as readme_file:
