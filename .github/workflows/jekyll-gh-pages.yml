@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Update README with current time
         run: |
-          NOW=$(date -u --date="TZ=Asia/Shanghai" "+%Y-%m-%d %H:%M:%S")
+          NOW=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
           sed -i '14s/.*/'"${"## 最新结果 @ "}$NOW"'/' README.md
       - name: Commit and push changes
         run: |
