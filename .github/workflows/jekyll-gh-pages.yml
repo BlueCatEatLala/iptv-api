@@ -33,7 +33,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Update README with current time
         run: |
-          NOW=${"## 最新结果 @ "}$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          Prex = "## 最新结果 @ "
+          NOW=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          Update_Time = "${str1}${str2}"
           sed -i '14s/.*/'"$NOW"'/' README.md
       - name: Commit and push changes
         run: |
