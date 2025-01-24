@@ -1,5 +1,4 @@
 import datetime
-import git
 
 def update_readme():
     tz = datetime.timezone(datetime.timedelta(hours=8))
