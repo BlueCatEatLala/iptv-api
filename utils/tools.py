@@ -353,7 +353,7 @@ def convert_to_m3u(first_channel_name=None):
     user_final_file = resource_path(config.final_file)
     if os.path.exists(user_final_file):
         with open(user_final_file, "r", encoding="utf-8") as file:
-            m3u_output = '#EXTM3U x-tvg-url="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/e.xml"\n'
+            m3u_output = '#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/cc.xml"\n'
             current_group = None
             for line in file:
                 trimmed_line = line.strip()
