@@ -18,3 +18,4 @@ https://ghproxy.cc/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m
 https://ghproxy.cc/https://raw.githubusercontent.com/iptvsyx/test/main/8.txt
 https://ghproxy.cc/https://raw.githubusercontent.com/iptvsyx/test/main/9.txt
 https://ghproxy.cc/https://raw.githubusercontent.com/BlueCatEatLala/Tvlist-private/master/m3u/IPV4-CM3.txt
+https://ghproxy.cc/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/hljyd.m3u
